@@ -1,0 +1,34 @@
+html, body {
+    font-family: "Lexend Giga", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.logo {
+    font-size: 1px;
+    color: transparent;
+    width: 100px;
+    height: 45px;
+    background: url("../img/vidos_logo.png") no-repeat left top;
+    background-size: contain;
+}
+.portfolio {
+    white-space: nowrap;
+    overflow: scroll;
+}
+.portfolio > div {
+    width: 80%;
+    display: inline-block!important;
+}
+
+.portfolio > div > iframe {
+    min-width: 100%!important;
+    width: 100%!important;
+}
+
+@media screen and (min-width: 800px) {
+    .portfolio > div {
+        width: 30%;
+        display: inline-block!important;
+    }
+}
